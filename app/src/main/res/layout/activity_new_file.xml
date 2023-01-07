@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".createFile.NewFile">
+
+    <EditText
+        android:id="@+id/ed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="20dp"
+        android:hint="File Name" />
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="read"
+        android:layout_below="@+id/ed"/>
+
+    <Button
+        android:id="@+id/folderbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv"
+
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="Create Folder" />
+    <Button
+        android:id="@+id/createfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/folderbtn"
+        android:layout_centerHorizontal="true"
+        android:text="Create File"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+
+        />
+
+    <Button
+        android:id="@+id/rename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createfile"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text="  Write in file"
+
+        />
+
+    <Button
+        android:id="@+id/delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rename"
+        android:layout_centerHorizontal="true"
+        android:layout_marginEnd="20dp"
+        android:backgroundTint="@color/black"
+        android:text=" Read File"
+
+        />
+
+</RelativeLayout>

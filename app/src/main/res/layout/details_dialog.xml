@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+    <TextView
+        android:textColor="@color/black"
+        android:id="@+id/fileNameDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="file name"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:scrollHorizontally="true"
+        android:gravity="center"
+        android:textSize="19sp"/>
+    <TextView
+        android:layout_below="@id/fileNameDetails"
+        android:textColor="@color/black"
+        android:id="@+id/filePathDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="file path"
+        android:scrollHorizontally="true"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:gravity="center"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:layout_below="@id/filePathDetails"
+        android:textColor="@color/black"
+        android:singleLine="true"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:id="@+id/fileSizeDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollHorizontally="true"
+        android:text="file size"
+        android:gravity="center"
+        android:textSize="18sp"/>
+    <Button
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileSizeDetails"
+        android:layout_centerHorizontal="true"
+        android:text="ok"
+        android:backgroundTint="@color/black"
+        android:id="@+id/okButtonDetails"/>
+
+</RelativeLayout>

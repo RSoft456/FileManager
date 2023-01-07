@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="20dp"
+    >
+<TextView
+    android:textColor="@color/black"
+    android:id="@+id/file"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Enter file name"
+    android:gravity="center"
+    android:textSize="25sp"/>
+    <EditText
+        android:layout_below="@id/file"
+        android:id="@+id/fileName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="file name" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fileName">
+
+        <Button
+            android:id="@+id/okButtonFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:backgroundTint="@color/black"
+            android:text="ok" />
+
+        <Button
+            android:id="@+id/cancelButtonFile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+
+            android:backgroundTint="@color/black"
+
+            android:text="cancel" />
+    </LinearLayout>
+</RelativeLayout>
